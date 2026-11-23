@@ -86,6 +86,16 @@ The project generates:
 - Pie charts
 - CSV expense reports
 
+## Project Screenshots
+
+### 1. Category-wise Expense Analysis (Bar Chart)
+
+![Category Expenses](screenshots/category_expenses.png)
+
+### 2. Category-wise Spending Percentage (Pie Chart)
+
+![Expense Pie Chart](screenshots/expense_pie_chart.png)
+
 ## Author
 
 GitHub: [User-Madhumitha](https://github.com/User-Madhumitha)
