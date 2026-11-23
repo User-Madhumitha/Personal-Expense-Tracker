@@ -1,30 +1,29 @@
 # Personal Expense Tracker
 
+A Python and MySQL-based application to record, manage, and analyze personal expenses.
+
 ## Project Overview
 
-The Personal Expense Tracker is a Python and MySQL-based application that helps users record, store, manage, and analyze their daily expenses.
-
-It also provides expense summaries, category-wise analysis, Excel-compatible reports, and data visualizations.
+The Personal Expense Tracker helps users store daily expenses, view transaction records, analyze spending patterns, and generate reports.
 
 ## Technologies Used
 
 - Python
 - MySQL
-- MySQL Connector
+- Pandas
 - Matplotlib
 - Excel / CSV
-- Visual Studio Code
+- Git and GitHub
 
 ## Features
 
-1. Add expense details using Python.
-2. Store expense records in MySQL.
-3. View all saved expenses.
-4. Calculate total expenses.
-5. Generate category-wise expense reports.
-6. Export expense records to CSV.
-7. Visualize expenses using bar charts.
-8. Visualize spending percentages using pie charts.
+- Add new expenses
+- View all expense records
+- Calculate total expenses
+- Generate expense summaries
+- Analyze category-wise spending
+- Create bar charts and pie charts
+- Export expense reports to CSV
 
 ## Project Structure
 
@@ -35,49 +34,62 @@ Personal-Expense-Tracker/
 ├── excel/
 │   └── expense_report.csv
 ├── python/
-│   ├── expense_analysis.py
-│   ├── mysql_connection.py
 │   ├── add_expense.py
-│   ├── view_expenses.py
+│   ├── expense_analysis.py
+│   ├── expense_chart.py
+│   ├── expense_pie_chart.py
 │   ├── expense_summary.py
 │   ├── export_to_csv.py
-│   ├── expense_chart.py
-│   └── expense_pie_chart.py
+│   ├── mysql_connection.py
+│   └── view_expenses.py
 ├── screenshots/
-│   └── category_expenses.png
 ├── sql/
+├── .gitignore
 └── README.md
 ```
 
 ## Database
 
-Database Name: `expense_tracker`
+Database name: `expense_tracker`
 
-Table Name: `expenses`
+Table name: `expenses`
 
-The table stores:
+The database stores expense categories, descriptions, amounts, and dates.
 
-- Expense ID
-- Category
-- Description
-- Amount
-- Expense Date
+## How to Run
 
-## Learning Outcomes
+1. Install Python.
+2. Install MySQL Server.
+3. Install the required Python libraries:
 
-- Python programming and database connectivity.
-- SQL queries and data retrieval.
-- Data analysis using Python.
-- Exporting data to CSV.
-- Data visualization using Matplotlib.
+```bash
+pip install mysql-connector-python pandas matplotlib
+```
 
-## Future Improvements
+4. Configure your MySQL connection.
+5. Open the project folder in VS Code.
+6. Run the Python files from the terminal.
 
-- Add income tracking.
-- Add monthly expense reports.
-- Create a graphical user interface.
-- Develop a Power BI dashboard.
+Example:
+
+```bash
+python python/add_expense.py
+```
+
+## Output
+
+The project generates:
+
+- Expense summaries
+- Category-wise analysis
+- Bar charts
+- Pie charts
+- CSV expense reports
 
 ## Author
 
-B.E. CSE (Data Science) Student
+GitHub: [User-Madhumitha](https://github.com/User-Madhumitha)
+
+## Project Status
+
+Completed initial version. Further improvements are planned.
